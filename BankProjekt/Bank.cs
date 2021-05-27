@@ -72,7 +72,9 @@ namespace BankProjekt
         // Lekérdezi az adott számlán lévő pénzösszeget
         public ulong Egyenleg(string szamlaszam)
         {
-            throw new NotImplementedException();
+            Szamla szamla = SzamlaKeres(szamlaszam);
+
+            return szamla.Egyenleg;
         }
     }
 }
